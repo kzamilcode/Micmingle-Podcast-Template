@@ -19,9 +19,6 @@ module.exports = {
     },
     fontFamily: {
       poppins: "'Poppins', sans-serif",
-      caveat: "'Caveat', cursive",
-      nunito: "'Nunito', sans-serif",
-      Playfair: "'Playfair Display', serif",
     },
     extend: {
       padding: {
@@ -33,8 +30,7 @@ module.exports = {
       keyframes: {},
       animation: {},
       colors: {
-        v2_footer: "#032620",
-        v2_primary: "#F2FFFA",
+        header_primary: "#1A1A1A",
         primary: "#FBFFEB",
         secondary: "#006E5B",
         tertiary: "#F1C63E",

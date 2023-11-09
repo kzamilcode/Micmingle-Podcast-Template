@@ -46,15 +46,305 @@
     <script src="assets/js/lib/wow.min.js" defer></script>
     <!--javascript-link-->
     <script src="assets/js/main.js" defer></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
   </head>
 
-  <body class="overflow-x-hidden" data-page="#"></body>
+  <body class="overflow-x-hidden" data-page="#">
+    <!--start-header-section-->
+    <header class="bg-header_primary pt-[180px] pb-[105px]">
+      <div
+        class="flex gap-x-[75px] items-center justify-center container mx-auto"
+      >
+        <div class="text-white">
+          <h1
+            class="uppercase font-bold text-[76px] w-full max-w-[638px] leading-[85.12px] mb-[15px]"
+          >
+            Your Gateway to
+            <span>
+              Engaging
+              <svg
+                class="inline-flex justify-center items-center h-[56px] w-[42px]"
+                xmlns="http://www.w3.org/2000/svg"
+                width="42"
+                height="66"
+                viewBox="0 0 42 66"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_3_32)">
+                  <path
+                    d="M14.5024 55.8282C14.5024 58.4157 14.5024 60.9656 14.5024 63.5853C14.7191 63.5853 14.9091 63.5853 15.0981 63.5853C16.8764 63.5853 18.6548 63.5821 20.4343 63.5864C21.2658 63.5885 21.791 64.0371 21.8123 64.7476C21.8348 65.4859 21.3064 65.9925 20.4577 65.9936C15.6734 66.0011 10.8891 66 6.10476 65.9946C5.25507 65.9936 4.7096 65.4892 4.72241 64.7658C4.73522 64.0403 5.27749 63.5864 6.14319 63.5853C7.90449 63.5831 9.66472 63.5842 11.426 63.5842C11.6182 63.5842 11.8103 63.5842 12.0313 63.5842C12.0483 63.3975 12.0729 63.2601 12.0729 63.1238C12.0761 60.8529 12.0676 58.582 12.0857 56.3111C12.0889 55.928 11.9822 55.7917 11.5947 55.7434C5.45682 54.9642 0.606315 49.9878 0.119556 43.8018C-0.0789899 41.2776 0.0298903 38.7277 0.0234855 36.1896C0.0213506 35.4898 0.551875 35.008 1.2169 35.008C1.92035 35.008 2.41458 35.5167 2.41885 36.2958C2.42952 38.4412 2.39857 40.5876 2.42739 42.7329C2.49784 47.8059 6.17095 52.2361 11.1068 53.2342C17.8094 54.5897 24.1052 49.4265 24.1255 42.5548C24.1319 40.4802 24.1234 38.4057 24.1276 36.3323C24.1287 35.6422 24.4639 35.1765 25.0264 35.0434C25.7854 34.8631 26.5145 35.3396 26.5102 36.1563C26.4953 38.9788 26.6372 41.826 26.3127 44.6175C25.6509 50.3226 20.7129 55.0533 15.0372 55.7444C14.8664 55.7648 14.6946 55.7981 14.5024 55.8282Z"
+                    fill="#FFDA17"
+                  />
+                  <path
+                    d="M4.81742 36.1917C4.81742 33.9917 4.80247 31.7916 4.82062 29.5915C4.85051 26.1315 6.98968 23.0256 10.1835 21.7646C13.3709 20.5068 16.9917 21.2999 19.3668 23.7994C20.9231 25.4371 21.7163 27.4086 21.7259 29.6699C21.744 34.0335 21.7494 38.3982 21.7248 42.763C21.7003 47.1835 18.3549 50.8077 13.9794 51.2069C9.68927 51.5987 5.71515 48.5593 4.97006 44.229C4.78112 43.13 4.8377 41.9849 4.82169 40.8602C4.79927 39.304 4.81635 37.7479 4.81635 36.1917H4.81742ZM19.3241 36.2121C19.3241 34.0303 19.3262 31.8485 19.323 29.6656C19.3209 28.4324 18.9793 27.297 18.2855 26.2839C16.7473 24.0366 14.0605 23.0772 11.5328 23.8509C8.9602 24.6387 7.23413 26.9804 7.22773 29.73C7.21919 34.0399 7.22452 38.351 7.22773 42.661C7.22773 42.9819 7.2352 43.3081 7.28644 43.6237C7.82016 46.8809 10.5955 49.0466 13.8908 48.7879C16.9042 48.5518 19.3156 45.828 19.322 42.6503C19.3273 40.5049 19.3241 38.3585 19.3241 36.2121Z"
+                    fill="#FFDA17"
+                  />
+                  <path
+                    d="M41.9989 27.8475C41.9989 28.0815 42.0021 28.4035 41.9979 28.7244C41.9872 29.5282 41.5282 30.0347 40.8258 30.024C40.1501 30.0133 39.7135 29.5185 39.706 28.734C39.673 25.3556 39.1211 22.063 37.7804 18.9636C33.6749 9.47534 26.5198 3.95048 16.3064 2.49628C15.3596 2.36106 14.3935 2.34925 13.435 2.3074C12.6184 2.27091 12.1295 1.85021 12.1369 1.13975C12.1433 0.434654 12.6472 -0.0160926 13.4616 5.43808e-06C21.7611 0.16206 28.7839 3.25826 34.435 9.37016C38.6172 13.8937 41.0169 19.2855 41.7929 25.4071C41.8911 26.1873 41.9263 26.974 41.9989 27.8475Z"
+                    fill="#FFDA17"
+                  />
+                  <path
+                    d="M36.9189 28.1448C36.9189 28.3595 36.9221 28.5741 36.9179 28.7887C36.9029 29.5239 36.4589 30.0101 35.7938 30.0219C35.1256 30.0347 34.6687 29.5722 34.6239 28.8306C34.5791 28.0815 34.5641 27.3303 34.4947 26.5844C33.6354 17.3269 26.2754 9.32938 17.1582 7.77967C15.9189 7.56933 14.6519 7.51781 13.3955 7.42659C12.5031 7.36112 11.9672 6.73974 12.1743 5.94127C12.3173 5.39179 12.771 5.09773 13.499 5.10739C17.9215 5.1632 22.0525 6.3008 25.7715 8.70907C32.7868 13.253 36.4215 19.7985 36.9189 28.1448Z"
+                    fill="#FFDA17"
+                  />
+                  <path
+                    d="M31.8677 27.9924C31.8677 28.2779 31.8795 28.5644 31.8656 28.8488C31.8304 29.569 31.3458 30.0412 30.6765 30.0208C30.0317 30.0004 29.5802 29.5314 29.5738 28.8242C29.546 26.1497 28.9835 23.5966 27.6855 21.2602C24.5802 15.6677 19.8162 12.7443 13.4435 12.4953C12.4892 12.4578 11.9235 11.7881 12.1892 10.966C12.3579 10.4444 12.8062 10.1676 13.5054 10.1847C18.1072 10.2931 22.1667 11.8342 25.6167 14.9079C29.4147 18.2939 31.5091 22.7455 31.8677 27.9924Z"
+                    fill="#FFDA17"
+                  />
+                  <path
+                    d="M26.4728 28.6514C26.4365 28.8177 26.4184 29.1493 26.2935 29.4316C26.0864 29.8984 25.5473 30.1077 25.0286 29.9907C24.5151 29.8748 24.2045 29.452 24.1436 28.8574C24.0583 28.0064 24.0284 27.1392 23.8309 26.3129C22.6706 21.4523 18.4637 18.0663 13.4979 17.9472C12.6899 17.9279 12.2245 17.5834 12.1455 16.9459C12.0515 16.1872 12.5682 15.6237 13.3923 15.6345C16.0385 15.6677 18.484 16.3964 20.6595 17.9172C24.3208 20.4746 26.2017 24.0377 26.4728 28.6514Z"
+                    fill="#FFDA17"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3_32">
+                    <rect width="42" height="66" fill="white" />
+                  </clipPath>
+                </defs></svg
+            ></span>
+            Audio Content
+          </h1>
+          <p
+            class="w-full max-w-[568px] leading-[29.52px] text-[18px] mb-[38px]"
+          >
+            Explore thought-provoking discussions entertaining stories and
+            expert insights in one convenient platform
+          </p>
+          <div
+            class="track flex gap-x-[12px] bg-[#FFDA17] rounded-[10px] w-full max-w-[281px] h-[61px] justify-center items-center pl-[23px] pr-[15px]"
+          >
+            <h4 class="text-black text-[18px]">Listen Now</h4>
+            <div id="waveform"></div>
+            <svg
+              id="playBtn"
+              class="inline cursor-pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle cx="12" cy="12" r="12" fill="black" />
+              <path
+                d="M16.3929 11.9956C16.7262 12.188 16.7262 12.6691 16.3929 12.8616L10.8214 16.0783C10.4881 16.2707 10.0714 16.0301 10.0714 15.6452L10.0714 9.21191C10.0714 8.82701 10.4881 8.58644 10.8214 8.77889L16.3929 11.9956Z"
+                fill="#FFDA17"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="assets/img/home/hero-img.png" alt="hero-girl-img" />
+          <div
+            class="absolute bottom-9 -left-14 bg-white py-[28px] px-[18px] rounded-[10px]"
+          >
+            <h2 class="text-[35px] font-semibold leading-[42.175px]">100+</h2>
+            <h6 class="text-[16px] uppercase leading-[19.28px]">podcasts</h6>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--start-Latest Episode-->
+    <section class="container mx-auto mt-[90px] mb-[120px]">
+      <div class="flex justify-between mb-[37px]">
+        <a href="#" class="bg-[#FFC1EE] episode-btn">Latest Episode</a>
+        <a href="#" class="inline-flex items-end text-[16px]">See All</a>
+      </div>
+      <div class="grid grid-cols-3 gap-[20px]">
+        <div
+          class="flex flex-col justify-center items-center pt-[26px] pb-[42px] rounded-[10px] px-[11px]"
+          style="box-shadow: -1px 1px 20px 10px rgba(242, 242, 242, 0.75)"
+        >
+          <h4 class="text-[20px] font-medium">Digital Marketing</h4>
+          <h6
+            class="text-[14px] font-normal bg-[#FFDA17] py-[8px] px-[19px] rounded-[5px] mt-[14px]"
+          >
+            1 hr 45 min
+          </h6>
+          <img
+            class="mt-[23px]"
+            src="assets/img/home/latest-episode-one.png"
+            alt="latest-episode-one"
+          />
+          <h4 class="text-[20px] font-medium mt-[16px] leading-[24.1px]">
+            Jon Abraham
+          </h4>
+          <h6 class="text-[14px] font-normal text-[#7A7A7A] mt-[7px]">
+            Founder & CEO AB group
+          </h6>
+          <div
+            class="track flex gap-x-[12px] rounded-[10px] w-full max-w-[381px] justify-center items-center mt-[31px]"
+          >
+            <svg
+              id="playBtnTwo"
+              class="inline cursor-pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle cx="12" cy="12" r="12" fill="black" />
+              <path
+                d="M16.3929 11.9956C16.7262 12.188 16.7262 12.6691 16.3929 12.8616L10.8214 16.0783C10.4881 16.2707 10.0714 16.0301 10.0714 15.6452L10.0714 9.21191C10.0714 8.82701 10.4881 8.58644 10.8214 8.77889L16.3929 11.9956Z"
+                fill="#FFDA17"
+              />
+            </svg>
+            <div id="waveformtwo"></div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center pt-[26px] pb-[42px] rounded-[10px] px-[11px]"
+          style="box-shadow: -1px 1px 20px 10px rgba(242, 242, 242, 0.75)"
+        >
+          <h4 class="text-[20px] font-medium">Graphic Design</h4>
+          <h6
+            class="text-[14px] font-normal bg-[#FFDA17] py-[8px] px-[19px] rounded-[5px] mt-[14px]"
+          >
+            3 hr 45 min
+          </h6>
+          <img
+            class="mt-[23px]"
+            src="assets/img/home/latest-episode-two.png"
+            alt="latest-episode-one"
+          />
+          <h4 class="text-[20px] font-medium mt-[16px] leading-[24.1px]">
+            Arina Lindra
+          </h4>
+          <h6 class="text-[14px] font-normal text-[#7A7A7A] mt-[7px]">
+            UI/UX Designer At Aiva Lab
+          </h6>
+          <div
+            class="track flex gap-x-[12px] rounded-[10px] w-full max-w-[381px] justify-center items-center mt-[31px]"
+          >
+            <svg
+              id="playBtnThree"
+              class="inline cursor-pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle cx="12" cy="12" r="12" fill="black" />
+              <path
+                d="M16.3929 11.9956C16.7262 12.188 16.7262 12.6691 16.3929 12.8616L10.8214 16.0783C10.4881 16.2707 10.0714 16.0301 10.0714 15.6452L10.0714 9.21191C10.0714 8.82701 10.4881 8.58644 10.8214 8.77889L16.3929 11.9956Z"
+                fill="#FFDA17"
+              />
+            </svg>
+            <div id="waveformthree"></div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center pt-[26px] pb-[42px] rounded-[10px] px-[11px]"
+          style="box-shadow: -1px 1px 20px 10px rgba(242, 242, 242, 0.75)"
+        >
+          <h4 class="text-[20px] font-medium">Digital Marketing</h4>
+          <h6
+            class="text-[14px] font-normal bg-[#FFDA17] py-[8px] px-[19px] rounded-[5px] mt-[14px]"
+          >
+            1 hr 20 min
+          </h6>
+          <img
+            class="mt-[23px]"
+            src="assets/img/home/latest-episode-three.png"
+            alt="latest-episode-one"
+          />
+          <h4 class="text-[20px] font-medium mt-[16px] leading-[24.1px]">
+            Abrham Linkon
+          </h4>
+          <h6 class="text-[14px] font-normal text-[#7A7A7A] mt-[7px]">
+            Digital Marketer
+          </h6>
+          <div
+            class="track flex gap-x-[12px] rounded-[10px] w-full max-w-[381px] justify-center items-center mt-[31px]"
+          >
+            <svg
+              id="playBtnFour"
+              class="inline cursor-pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <circle cx="12" cy="12" r="12" fill="black" />
+              <path
+                d="M16.3929 11.9956C16.7262 12.188 16.7262 12.6691 16.3929 12.8616L10.8214 16.0783C10.4881 16.2707 10.0714 16.0301 10.0714 15.6452L10.0714 9.21191C10.0714 8.82701 10.4881 8.58644 10.8214 8.77889L16.3929 11.9956Z"
+                fill="#FFDA17"
+              />
+            </svg>
+            <div id="waveformfour"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/wavesurfer.js@7"></script>
+    <script>
+      let playBtn = document.getElementById("playBtn");
+      const wavesurfer = WaveSurfer.create({
+        container: "#waveform",
+        waveColor: "#000",
+        progressColor: "#fff",
+        width: 100,
+        barWidth: 2.2,
+        height: 23,
+        responsive: true,
+        barGap: 3,
+        barWidth: 2,
+        url: "assets/media/Good-Day-Wake-Up-NEFFEX.mp3",
+      });
+      playBtn.onclick = function () {
+        wavesurfer.playPause();
+      };
+      <!----->
+      let playBtn_two = document.getElementById("playBtnTwo");
+      const wavesurfertwo = WaveSurfer.create({
+        container: "#waveformtwo",
+        waveColor: "#D0D0D0",
+        progressColor: "#000",
+        width: 300,
+        barWidth: 2.2,
+        height: 23,
+        responsive: true,
+        barGap: 3,
+        barWidth: 2,
+        url: "assets/media/Good-Day-Wake-Up-NEFFEX.mp3",
+      });
+      playBtn_two.onclick = function () {
+        wavesurfertwo.playPause();
+      };
+
+      let playBtn_three = document.getElementById("playBtnThree");
+      const wavesurferthree = WaveSurfer.create({
+        container: "#waveformthree",
+        waveColor: "#D0D0D0",
+        progressColor: "#000",
+        width: 300,
+        barWidth: 2.2,
+        height: 23,
+        responsive: true,
+        barGap: 3,
+        barWidth: 2,
+        url: "assets/media/Good-Day-Wake-Up-NEFFEX.mp3",
+      });
+      playBtn_three.onclick = function () {
+        wavesurferthree.playPause();
+      };
+      let playBtn_four = document.getElementById("playBtnFour");
+      const wavesurferfour = WaveSurfer.create({
+        container: "#waveformfour",
+        waveColor: "#D0D0D0",
+        progressColor: "#000",
+        width: 300,
+        barWidth: 2.2,
+        height: 23,
+        responsive: true,
+        barGap: 3,
+        barWidth: 2,
+        url: "assets/media/Good-Day-Wake-Up-NEFFEX.mp3",
+      });
+      playBtn_four.onclick = function () {
+        wavesurferfour.playPause();
+      };
+    </script>
+  </body>
 </html>
