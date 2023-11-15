@@ -5,189 +5,128 @@
 body{
   @apply font-poppins;
 }
+svg{
+  @apply inline-block;
+}
+.sponsor svg{
+  @apply cursor-pointer;
+}
 .episode-btn{
   @apply px-[25px] py-[13px] text-[25px] font-normal rounded-[5px];
+}
+.season-episode-btn{
+  @apply bg-black text-pearl-white px-[30px] py-[6px] text-[16px] rounded-[6px] leading-[30.24px];
 }
 /**start-Season Episode of music-galary**/
 /* (B) WRAPPER */
 .aWrap {
-  display: flex;
-  align-items: center;
-  width: 250px;
-  gap: 1rem;
+  @apply flex items-center w-[250px] gap-[1rem];
 }
 
 .fa {
-  font-size: 30px;
+  @apply text-[30px];
 }
 /* (C) PLAY/PAUSE BUTTON */
 .aPlay {
-  padding: 0;
-  margin: 0;
-  background: 0;
-  border: 0;
-  cursor: pointer;
+  @apply p-0 m-0 bg-transparent border-none cursor-pointer;
+
 }
 
 /* (E) RANGE SLIDERS */
 /* (E1) HIDE DEFAULT */
 .aWrap input[type="range"] {
-  appearance: none;
-  border: none;
-  outline: none;
-  box-shadow: none;
-  width: 225px;
-  padding: 0;
-  margin: 0;
-  background: 0;
+  @apply appearance-none border-none outline-none shadow-none w-[225px] p-0 m-0 bg-transparent;
 }
 
 .range {
-  position: relative;
-  display: flex;
-  align-items: center;
+  @apply relative flex items-center;
 }
 
 .range input {
-  position: relative;
-  z-index: 1;
+  @apply relative z-[1];
 }
 
 .range .change-range {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 15px;
-  width: 0px;
-  background-color: #ffda17;
-  border-radius: 10px 0 0 10px;
+  @apply absolute left-0 top-0 h-[15px] w-0 bg-[#ffda17] rounded-l-[50px];
 }
 
 .under-ranger {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 15px;
-  width: 100%;
-  background-color: #cecece;
-  border-radius: 10px;
+  @apply absolute left-0 top-0 h-[15px] w-full bg-[#cecece] rounded-[10px];
 }
 
 .aWrap input[type="range"]::-webkit-slider-thumb {
-  appearance: none;
+  @apply appearance-none;
 }
 
 /* (E2) CUSTOM SLIDER TRACK */
 .aWrap input[type="range"]::-webkit-slider-runnable-track {
-  background: transparent;
-  height: 15px;
-  border-radius: 10px;
+  @apply bg-transparent h-[15px] rounded-[10px];
 }
 
 /* (E3) CUSTOM SLIDER BUTTON */
 
 .aWrap input::-webkit-slider-thumb {
+  @apply appearance-none w-[22px] h-[22px] rounded-full border-[4px] border-solid border-pearl-white bg-black relative cursor-pointer -mt-[5px];
   -webkit-appearance: none;
-  appearance: none;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  background: #000;
-  position: relative;
-  cursor: pointer;
-  margin-top: -5px;
 }
 
 .aWrap input[type="range"]::-moz-range-thumb {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  background: #cdc9c9;
-  position: relative;
-  cursor: pointer;
-  margin-top: -5px;
+  @apply w-[16px] h-[16px] rounded-full border-[4px] border-solid border-pearl-white bg-[#cdc9c9] relative cursor-pointer -mt-[5px];
 }
 /**Testimonial**/
 .testimonial--slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-position: relative;
-  margin: 20px auto;
+  @apply flex items-center justify-center w-full relative;
 }
 .testimonial--slider--navigation {
-  position: absolute;
-  top: 215px;
-  width: 90px;
-  height: 35px;
-  overflow: hidden;
-  z-index: 1;
-  right: 0;
+  @apply absolute top-[215px] w-[90px] h-[35px] overflow-hidden z-[1] right-0;
 }
 @media only screen and (min-width: 769px) and (max-width: 1300px) {
   .testimonial--slider--navigation {
-    left: 60%;
+    @apply left-[60%];
   }
 }
 @media only screen and (max-width: 768px) {
   .testimonial--slider--navigation {
-    left: 50%;
+    @apply left-[50%];
   }
 }
 .testimonial--slider--navigation .left,
 .testimonial--slider--navigation .right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  cursor: pointer;
-  width: 50%;
-  height: 100%;
+  @apply flex justify-center items-center absolute cursor-pointer w-[50%] h-full;
 }
 .slide-text{
-  text-align: left;
+  @apply text-left;
 }
 .testimonial--slider--navigation .left {
-  left: 0;
+  @apply left-0;
 }
 .testimonial--slider--navigation .right {
-  right: 0;
+  @apply right-0;
 }
 .testimonial--slider--navigation .disabled {
-  pointer-events: none;
+  @apply pointer-events-none;
 }
 .testimonial--slider--navigation .disabled i {
-  color: #ccc;
+  @apply text-[#ccc];
 }
 .testimonial--slider--content {
-  display: block;
-  position: relative;
+  @apply block relative;
 }
 .testimonial--slider--content .slide {
-  display: flex;
-  justify-content: center;
-
-  text-align: center;
-  width: 100%;
-  gap:43px;
+  @apply flex justify-center text-center w-full gap-[43px];
 }
 @media only screen and (max-width: 768px) {
   .testimonial--slider--content .slide {
-    flex-direction: column-reverse;
+    @apply flex-col-reverse;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .testimonial--slider--content .slide .slide-text {
-    margin: 1em 0 0;
+    @apply my-[1em];
   }
 }
 .testimonial--slider--content .slide .slide-text span {
-  display: block;
-  font-size: 0.75em;
-  display: block;
+  @apply block text-[0.75em];
 }
 
